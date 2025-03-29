@@ -8,7 +8,7 @@
     <style>
         :root {
             --primary: #2a2a72;
-            --secondary: #009ffd;
+            --secondary: #aabbcc;
             --accent: #ff6b6b;
             --dark: #232528;
             --light: #f4f4f4;
