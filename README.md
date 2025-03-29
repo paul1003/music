@@ -16,10 +16,10 @@
         <section class="content">
             <p>🎥 Welcome to my YouTube channel! I create content about:</p>
             <ul>
-                <li>Programming tutorials</li>
-                <li>Tech reviews</li>
-                <li>Software development</li>
-                <li>Latest tech trends</li>
+                <li>Music</li>
+                <li>Blues</li>
+                <li>Chinese Love Songs</li>
+                <li>Ai usages</li>
             </ul>
             
             <div class="cta">
