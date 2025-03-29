@@ -1,3 +1,3 @@
 # music
 Where AI meets Art and Music test
-<img src=test.png/>
+<img src="main/test.png"/>
