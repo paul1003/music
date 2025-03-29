@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Grid 6x12</title>
+    <style>
+        .grid-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            overflow-x: auto;
+        }
+        
+        .image-grid {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        .image-grid td {
+            width: 50px;  /* Adjust based on your needs */
+            height: 50px; /* Adjust based on your needs */
+            border: 1px solid #ddd;
+            padding: 5px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        
+        .image-grid img {
+            max-width: 100%;
+            max-height: 100%;
+            display: block;
+            margin: 0 auto;
+            object-fit: cover;
+        }
+        
+        .image-link {
+            display: block;
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <table class="image-grid">
+            <!-- 6 rows -->
+            <tr><!-- 12 columns --></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+        </table>
+    </div>
+
+    <script>
+        // JavaScript to generate the grid cells with links and images
+        document.addEventListener('DOMContentLoaded', function() {
+            const table = document.querySelector('.image-grid');
+            
+            // Create 6 rows
+            for (let i = 0; i < 6; i++) {
+                const row = table.insertRow();
+                
+                // Create 12 columns in each row
+                for (let j = 0; j < 12; j++) {
+                    const cell = row.insertCell();
+                    const link = document.createElement('a');
+                    link.className = 'image-link';
+                    link.href = 'running_hub/'+j+'.png'; // Replace with your actual link
+                    
+                    const img = document.createElement('img');
+                    img.src = 'running_hub/'+j+'.png'; // Replace with your image path
+                    img.alt = 'Image '+j;
+                    
+                    link.appendChild(img);
+                    cell.appendChild(link);
+                }
+            }
+        });
+    </script>
+</body>
+</html>
